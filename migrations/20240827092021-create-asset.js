@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("asset", {
+    await queryInterface.createTable("assets", {
       id: {
         primaryKey: true,
         type: Sequelize.UUID,
@@ -29,6 +29,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("asset");
+    await queryInterface.dropTable("assets");
   },
 };
