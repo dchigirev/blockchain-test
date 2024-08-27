@@ -20,7 +20,7 @@ export default class Client extends Model<Client> {
   public name: string;
 
   @Column(DataType.DECIMAL)
-  public balance_quote: number;
+  public balance_sol: number;
 
   @Column(DataType.DECIMAL)
   public balance_tokens: number;
