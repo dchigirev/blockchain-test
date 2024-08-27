@@ -1,7 +1,7 @@
+import { IAbstractEntity } from "@models/_abstract";
 import { EPositionType, ETransactionStatus, ETransactionType } from "../enums";
 
-export interface ITransaction {
-  id: string;
+export interface ITransaction extends IAbstractEntity {
   client_id: string;
   asset_id: string;
   transaction_type: ETransactionType;
@@ -9,7 +9,6 @@ export interface ITransaction {
   amount_token: number;
   quote_amount: number;
   status: ETransactionStatus;
-  date: Date;
   dex_transaction_id: string;
   platform_balance_before: number;
   platform_balance_after: number;
