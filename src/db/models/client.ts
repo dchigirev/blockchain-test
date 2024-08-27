@@ -22,7 +22,7 @@ export default class Client extends Model<Client> {
   @Column(DataType.INTEGER)
   public balance_quote: number;
 
-  @Column(DataType.INTEGER)
+  @Column(DataType.DECIMAL)
   public balance_tokens: number;
 
   @CreatedAt
