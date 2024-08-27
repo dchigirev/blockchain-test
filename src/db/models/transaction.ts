@@ -10,7 +10,7 @@ import Client from './client';
   timestamps: true,
   underscored: true,
   modelName: 'Transaction',
-  tableName: 'transaction',
+  tableName: 'transactions',
 })
 export default class Transaction extends Model<Transaction> {
 

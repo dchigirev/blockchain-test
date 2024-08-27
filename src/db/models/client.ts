@@ -7,7 +7,7 @@ import {
   timestamps: true,
   underscored: true,
   modelName: 'Client',
-  tableName: 'client',
+  tableName: 'clients',
 })
 export default class Client extends Model<Client> {
 

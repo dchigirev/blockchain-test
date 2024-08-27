@@ -8,7 +8,7 @@ import { ETickerSymbol } from '../../models';
   timestamps: true,
   underscored: true,
   modelName: 'Asset',
-  tableName: 'asset',
+  tableName: 'assets',
 })
 export default class Asset extends Model<Asset> {
 
