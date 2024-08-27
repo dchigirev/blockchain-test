@@ -19,7 +19,7 @@ export default class Client extends Model<Client> {
   @Column
   public name: string;
 
-  @Column(DataType.INTEGER)
+  @Column(DataType.DECIMAL)
   public balance_quote: number;
 
   @Column(DataType.DECIMAL)

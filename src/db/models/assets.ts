@@ -21,7 +21,7 @@ export default class Asset extends Model<Asset> {
   public ticker: ETickerSymbol;
 
   @Column(DataType.STRING)
-  public contract_address: number;
+  public contract_address: string;
 
   @CreatedAt
   public created_at: Date;
