@@ -2,7 +2,7 @@ import { EPositionType, ETransactionStatus, ETransactionType } from '@models/tra
 import {
   Table, PrimaryKey, Column, Model, CreatedAt, UpdatedAt, DeletedAt, DataType, IsUUID, AllowNull, ForeignKey
 } from 'sequelize-typescript';
-import Asset from './assets';
+import Asset from './asset';
 import Client from './client';
 
 @Table({
@@ -41,7 +41,7 @@ export default class Transaction extends Model<Transaction> {
   public amount_token: number;
 
   @Column(DataType.DECIMAL)
-  public quote_amount: number;
+  public amount_sol: number;
 
   @Column(DataType.ENUM)
   public status: ETransactionStatus;

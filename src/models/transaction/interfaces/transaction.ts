@@ -7,7 +7,7 @@ export interface ITransaction extends IAbstractEntity {
   transaction_type: ETransactionType;
   position_type: EPositionType;
   amount_token: number;
-  quote_amount: number;
+  amount_sol: number;
   status: ETransactionStatus;
   dex_transaction_id: string;
   platform_balance_before: number;
