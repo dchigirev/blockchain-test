@@ -8,7 +8,7 @@ module.exports = {
         type: Sequelize.UUID,
       },
       ticker: {
-        type: Sequelize.ENUM,
+        type: Sequelize.STRING,
       },
       contract_address: {
         type: Sequelize.STRING,

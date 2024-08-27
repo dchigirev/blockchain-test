@@ -17,7 +17,8 @@ export default class Asset extends Model<Asset> {
   @Column
   public id: string;
 
-  @Column(DataType.ENUM)
+  /** @todo convert strings to enums */
+  @Column(DataType.STRING)
   public ticker: ETickerSymbol;
 
   @Column(DataType.STRING)

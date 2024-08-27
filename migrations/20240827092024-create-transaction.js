@@ -18,10 +18,10 @@ module.exports = {
         allowNull: false,
       },
       transaction_type: {
-        type: Sequelize.ENUM,
+        type: Sequelize.STRING,
       },
       position_type: {
-        type: Sequelize.ENUM,
+        type: Sequelize.STRING,
       },
       amount_token: {
         type: Sequelize.DECIMAL,
@@ -30,7 +30,7 @@ module.exports = {
         type: Sequelize.DECIMAL,
       },
       status: {
-        type: Sequelize.ENUM,
+        type: Sequelize.STRING,
       },
       dex_transaction_id: {
         type: Sequelize.STRING,

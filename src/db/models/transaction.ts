@@ -31,10 +31,10 @@ export default class Transaction extends Model<Transaction> {
   @Column
   public asset_id: string;
 
-  @Column(DataType.ENUM)
+  @Column(DataType.STRING)
   public transaction_type: ETransactionType;
 
-  @Column(DataType.ENUM)
+  @Column(DataType.STRING)
   public position_type: EPositionType;
 
   @Column(DataType.DECIMAL)
@@ -43,7 +43,7 @@ export default class Transaction extends Model<Transaction> {
   @Column(DataType.DECIMAL)
   public amount_sol: number;
 
-  @Column(DataType.ENUM)
+  @Column(DataType.STRING)
   public status: ETransactionStatus;
 
   @Column(DataType.STRING)
