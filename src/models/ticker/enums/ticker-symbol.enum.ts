@@ -1,4 +1,4 @@
 export enum ETickerSymbol {
-  DOGE = 'DOGE',
-  MEW = 'MEW',
+  DOGE = 'doge',
+  MEW = 'meow',
 }
