@@ -8,6 +8,9 @@ import app from './app';
 const debug = require('debug')('blockchain-test:server');
 import http from 'http';
 
+import { sequelize } from './db';
+sequelize.databaseVersion()
+  .then(console.log);
 /**
  * Get port from environment and store in Express.
  */

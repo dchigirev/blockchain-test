@@ -10,7 +10,7 @@ import { ETickerSymbol } from '../../models';
   modelName: 'Asset',
   tableName: 'assets',
 })
-export default class Asset extends Model<Asset> {
+export default class Asset extends Model {
 
   @IsUUID(4)
   @PrimaryKey

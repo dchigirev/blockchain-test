@@ -9,7 +9,7 @@ import {
   modelName: 'Client',
   tableName: 'clients',
 })
-export default class Client extends Model<Client> {
+export default class Client extends Model {
 
   @IsUUID(4)
   @PrimaryKey

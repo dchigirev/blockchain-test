@@ -9,7 +9,7 @@ import {
   modelName: 'PlatformBalance',
   tableName: 'platform_balance',
 })
-export default class PlatformBalance extends Model<PlatformBalance> {
+export default class PlatformBalance extends Model {
 
   @IsUUID(4)
   @PrimaryKey

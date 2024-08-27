@@ -1,4 +1,4 @@
-import { EPositionType, ETransactionStatus, ETransactionType } from '@models/transaction';
+import { EPositionType, ETransactionStatus, ETransactionType } from '../../models/transaction';
 import {
   Table, PrimaryKey, Column, Model, CreatedAt, UpdatedAt, DeletedAt, DataType, IsUUID, AllowNull, ForeignKey
 } from 'sequelize-typescript';
@@ -12,7 +12,7 @@ import Client from './client';
   modelName: 'Transaction',
   tableName: 'transactions',
 })
-export default class Transaction extends Model<Transaction> {
+export default class Transaction extends Model {
 
   @IsUUID(4)
   @PrimaryKey
