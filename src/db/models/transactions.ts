@@ -1,6 +1,7 @@
 import {
   Table, PrimaryKey, Column, Model, CreatedAt, UpdatedAt, DeletedAt, DataType, IsUUID, AllowNull, ForeignKey
 } from 'sequelize-typescript';
+import Asset from './assets';
 import Client from './client';
 
 @Table({
@@ -22,6 +23,12 @@ export default class Transaction extends Model<Transaction> {
   @ForeignKey(() => Client)
   @Column
   public client_id: string;
+
+  @AllowNull(false)
+  @IsUUID(4)
+  @ForeignKey(() => Asset)
+  @Column
+  public asset_id: string;
 
   @CreatedAt
   public created_at: Date;
