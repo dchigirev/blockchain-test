@@ -6,6 +6,7 @@ import Asset from "../../db/models/asset";
 import Client from "../../db/models/client";
 import Transaction from "../../db/models/transaction";
 import PlatformBalance from "../../db/models/platform-balance";
+import { apiSwap } from "../../lib/raydium";
 
 interface IOpenRequest {
   amount_token: number;
@@ -57,6 +58,8 @@ async function _getPlatformBalance(): Promise<IPlatformBalance> {
 
 async function _dexTransaction(client: IClient, asset: IAsset, amount_token: number): Promise<string> {
   /** @todo DEX transaction here */
+  const res = await apiSwap();
+  console.log('---DEX RES = ', res);
   return 'test_dex_transaction_id';
 }
 
